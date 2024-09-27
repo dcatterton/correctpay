@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="https://cdn.forge.tylertech.com/v1/libs/@tylertech/forge@3.1.3/forge.css" />
+<link rel="stylesheet" href="https://cdn.forge.tylertech.com/v1/css/tyler-font.css" />
+<style>
+</style>
+<script src=""></script>
+<script type="module" src="https://cdn.forge.tylertech.com/v1/libs/@tylertech/forge@3.1.3/index.js"></script>
+
+<body>
+
+
+
+    <forge-app-bar title-text="" theme="custom" class="custom-app-bar">
+        <forge-app-bar-menu-button slot="start"></forge-app-bar-menu-button>
+        <img src="https://visitor.vendengine.com/images/correctpay-color.png" slot="logo" class="cpLogo"/>
+      </forge-app-bar>
+      
+      <div class="titleHeader">
+        <forge-badge class="facilityBadge" theme="success" strong="true">Morgan County Correctional Complex</forge-badge>
+        <h2>Standard Commissary Orders</h2>
+      </div>
+
+      <div class="searchToolbar">
+      <forge-toolbar>
+        <div slot="start">
+            <forge-text-field class="search">
+                <forge-icon external name="search" slot="start"></forge-icon>    
+            <label>Search for items</label>
+            <input type="text" />
+          </forge-text-field>
+        </div>
+        <div slot="end">
+            <forge-icon-button id="open-dialog" aria-label="Icon button demo" class="cartIcon">
+            <forge-icon external name="shopping_cart"></forge-icon>
+            <forge-badge slot="badge" theme="success" strong="true">3</forge-badge>
+          </forge-icon-button>
+        </div>
+      </forge-toolbar>
+    </div>
+
+      <div class="mobile-container">
+
+        <!-- <p class="forge-typography--subheading1">Categories</p>
+        <forge-chip-set type="filter" theme="success" class="categories">
+            <forge-chip value="payments" type="filter">Beverages</forge-chip>
+            <forge-chip value="bills" type="filter">Candy</forge-chip>
+            <forge-chip value="adjustments" type="filter">Chips</forge-chip>
+            <forge-chip value="payments" type="filter">Hot food</forge-chip>
+            <forge-chip value="bills" type="filter">Hyigene</forge-chip>
+            <forge-chip value="adjustments" type="filter">Personal care</forge-chip>
+            <forge-chip value="adjustments" type="filter">Snacks</forge-chip>
+          </forge-chip-set> -->
+
+        <forge-select class="filterCategory" aria-label="Label" label="Filter by category" floatLabel="true" density="small" value="All" multiple>
+            <forge-option class="test" value="1">Beverages</forge-option>
+            <forge-option value="2">Candy</forge-option>
+            <forge-option value="3">Chips</forge-option>
+            <forge-option value="4">Condiments and seasonings</forge-option>
+            <forge-option value="5">Cookies</forge-option>
+            <forge-option value="6">Hyigene</forge-option>
+            <forge-option value="7">Personal care</forge-option>
+            <forge-option value="8">Stationery</forge-option>
+            <forge-option value="9">Sweet treats</forge-option>
+          </forge-select>
+
+        <p class="forge-typography--subheading1">323 items</p>
+
+        <forge-card>
+            <div class="imageItemCost">
+                <img src="https://www.theramenrater.com/wp-content/uploads/2019/11/2019_11_21_3444_001.jpg" class="productImg"/>
+                <div class="itemCost">
+                <p class="forge-typography--subheading2">DRAGON EXPRESS HOT AND SPICY VEGETABLE LOW SODIUM RAMEN</p>
+                <p class="forge-typography--heading3 green">$2.06</p>
+            </div>
+            </div>
+            <div class="quantityAddCart">
+                <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                    <forge-option value="1">1</forge-option>
+                    <forge-option value="2">2</forge-option>
+                    <forge-option value="3">3</forge-option>
+                  </forge-select>
+                    <forge-button variant="tonal" class="addToCart" theme="success">
+                        <forge-icon external name="add_shopping_cart" slot="start"></forge-icon>
+                        Add to cart</forge-button>
+            </div>
+          </forge-card>
+
+          <forge-card>
+            <div class="imageItemCost">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fartsmidnorthcoast.com%2Fwp-content%2Fuploads%2F2014%2F05%2Fno-image-available-icon-6.png&f=1&nofb=1&ipt=da63b13de82d4734e6348c961222fd80df2d6e5baa1fc66b724cd62b3d8d771c&ipo=images" class="productImg"/>
+                <div class="itemCost">
+                <p class="forge-typography--subheading2">BACK COUNTRY CHICKEN CHILI WITH BEANS</p>
+                <p class="forge-typography--heading3 green">$2.43</p>
+            </div>
+            </div>
+            <div class="quantityAddCart">
+                <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                    <forge-option value="1">1</forge-option>
+                    <forge-option value="2">2</forge-option>
+                    <forge-option value="3">3</forge-option>
+                  </forge-select>
+                    <forge-button variant="tonal" class="addToCart" theme="success">
+                        <forge-icon external name="add_shopping_cart" slot="start"></forge-icon>
+                        Add to cart</forge-button>
+            </div>
+          </forge-card>
+
+          <forge-card>
+            <div class="imageItemCost">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.minimus.biz%2Fimages%2FF40-4129503-8300bg.jpg&f=1&nofb=1&ipt=4fc2cfbe61e9a221df73a7434b7dfcacb2e35e7acd3fe5180df9c70a34514611&ipo=images" class="productImg"/>
+                <div class="itemCost">
+                <p class="forge-typography--subheading2">Act 2 Butter Lovers Popcorn</p>
+                <p class="forge-typography--heading3 green">$0.83</p>
+            </div>
+            </div>
+            <div class="quantityAddCart">
+                <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                    <forge-option value="1">1</forge-option>
+                    <forge-option value="2">2</forge-option>
+                    <forge-option value="3">3</forge-option>
+                  </forge-select>
+                    <forge-button variant="tonal" class="addToCart" theme="success">
+                        <forge-icon external name="add_shopping_cart" slot="start"></forge-icon>
+                        Add to cart</forge-button>
+            </div>
+          </forge-card>
+
+          <forge-card>
+            <div class="imageItemCost">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.influenster.com%2FeyJidWNrZXQiOiAiaW5mbHVlbnN0ZXJfcHJvZHVjdGlvbiIsICJrZXkiOiAibWVkaWEvcHJvZHVjdC9pbWFnZS9mMjU4OTY4NC0wNGYxLTQ2M2ItYWUwYy02OTQ2ZDlmMmI3YzQucG5nIiwgImVkaXRzIjogeyJyZXNpemUiOiB7IndpZHRoIjogNzUwLCAiaGVpZ2h0IjogNzUwLCAiZml0IjogImluc2lkZSIsICJiYWNrZ3JvdW5kIjogeyJyIjogMSwgImciOiAxLCAiYiI6IDEsICJhbHBoYSI6IDB9LCAid2l0aG91dEVubGFyZ2VtZW50IjogdHJ1ZX19LCAiZXh0ZW5kIjoge319&f=1&nofb=1&ipt=a832b80b9024fa0ae1fb3d86e12e042c6e2505bfad64db8d5eea9917bee3f050&ipo=images" class="productImg"/>
+                <div class="itemCost">
+                <p class="forge-typography--subheading2">BIGELOW GREEN TEA CLASSIC 20 CT</p>
+                <p class="forge-typography--heading3 green">$3.75</p>
+            </div>
+            </div>
+            <div class="quantityAddCart">
+                <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                    <forge-option value="1">1</forge-option>
+                    <forge-option value="2">2</forge-option>
+                    <forge-option value="3">3</forge-option>
+                  </forge-select>
+                    <forge-button variant="tonal" class="addToCart" theme="success">
+                        <forge-icon external name="add_shopping_cart" slot="start"></forge-icon>
+                        Add to cart</forge-button>
+            </div>
+          </forge-card>
+
+          <forge-card>
+            <div class="imageItemCost">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2F6c0416fe-561d-4f38-8a7a-c8e468b1b6cd_1.d2c3190be373bea3c854643f31367c2e.jpeg&f=1&nofb=1&ipt=4f4cc93ab27dc51a3e9027d2bfa8923805a35789cdcb4f7c39b403ff793df203&ipo=images" class="productImg"/>
+                <div class="itemCost">
+                <p class="forge-typography--subheading2">CHEX MIX TRADITIONAL MIX 8.75 OZ</p>
+                <p class="forge-typography--heading3 green">$5.75</p>
+            </div>
+            </div>
+            <div class="quantityAddCart">
+                <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                    <forge-option value="1">1</forge-option>
+                    <forge-option value="2">2</forge-option>
+                    <forge-option value="3">3</forge-option>
+                  </forge-select>
+                    <forge-button variant="tonal" class="addToCart" theme="success">
+                        <forge-icon external name="add_shopping_cart" slot="start"></forge-icon>
+                        Add to cart</forge-button>
+            </div>
+          </forge-card>      
+          
+          <forge-dialog
+          trigger="open-dialog"
+          aria-labelledby="dialog-title"
+          aria-describedby="dialog-message"
+          fullscreenThreshol="450"
+          type="dialog"
+        >
+          <forge-scaffold>
+            <forge-toolbar slot="header" divider>
+              <h1 class="forge-typography--heading4" id="dialog-title" slot="start">
+                Cart
+              </h1>
+              <forge-icon-button slot="end" aria-label="Close dialog" >
+                <a href="/">
+                <forge-icon external name="close"></forge-icon>
+            </a>
+              </forge-icon-button>
+            </forge-toolbar>
+            <div slot="body" id="dialog-message">
+            
+                    
+                        <div class="itemCostDialog">
+                        <p class="forge-typography--subheading2 itemDialog">CHEX MIX TRADITIONAL MIX 8.75 OZ</p>
+                        <p class="forge-typography--heading3 green priceDialog">$5.75</p>
+                    </div>
+                    
+                    <div class="quantityAddCartDialog">
+                        <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                            <forge-option value="1">1</forge-option>
+                            <forge-option value="2">2</forge-option>
+                            <forge-option value="3">3</forge-option>
+                          </forge-select>
+                            <forge-button variant="outlined" class="addToCart" theme="error">
+                                <forge-icon external external-type="extended" name="cart_minus" slot="start"></forge-icon>
+                                Remove</forge-button>
+                    </div>
+
+                    <div class="itemCostDialog">
+                        <p class="forge-typography--subheading2 itemDialog">BACK COUNTRY CHICKEN CHILI WITH BEANS</p>
+                        <p class="forge-typography--heading3 green priceDialog">$2.43</p>
+                    </div>
+                    
+                    <div class="quantityAddCartDialog">
+                        <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                            <forge-option value="1">1</forge-option>
+                            <forge-option value="2">2</forge-option>
+                            <forge-option value="3">3</forge-option>
+                          </forge-select>
+                            <forge-button variant="outlined" class="addToCart" theme="error">
+                                <forge-icon external external-type="extended" name="cart_minus" slot="start"></forge-icon>
+                                Remove</forge-button>
+                    </div>
+
+                    <div class="itemCostDialog">
+                        <p class="forge-typography--subheading2 itemDialog">BIGELOW GREEN TEA CLASSIC 20 CT</p>
+                        <p class="forge-typography--heading3 green priceDialog">$3.75</p>
+                    </div>
+                    
+                    <div class="quantityAddCartDialog">
+                        <forge-select class="quantity" aria-label="Label" label="Quantity" floatLabel="true" value="1">
+                            <forge-option value="1">1</forge-option>
+                            <forge-option value="2">2</forge-option>
+                            <forge-option value="3">3</forge-option>
+                          </forge-select>
+                            <forge-button variant="outlined" class="addToCart" theme="error">
+                                <forge-icon external external-type="extended" name="cart_minus" slot="start"></forge-icon>
+                                Remove</forge-button>
+                    </div>
+
+                    <p class="forge-typography--overline">Order summary</p>
+
+                    <div class="lineItems">
+                        <p class="forge-typography--label2">Subtotal</p>
+                        <p class="forge-typography--subheading1">$11.93</p>
+                    </div>
+                    <div class="lineItems">
+                        <p class="forge-typography--label2">Shipping and handling fee</p>
+                        <p class="forge-typography--subheading1">$5.95</p>
+                    </div>
+                    <div class="lineItems">
+                        <p class="forge-typography--label2">Processing fee</p>
+                        <p class="forge-typography--subheading1">$0.72</p>
+                    </div>
+                    <div class="lineItems">
+                        <p class="forge-typography--label2">Sales tax</p>
+                        <p class="forge-typography--subheading1">$1.07</p>
+                    </div>
+                    <div class="grandTotal">
+                        <p class="forge-typography--heading2">Order total</p>
+                        <p class="forge-typography--heading3 green">$19.67</p>
+                    </div>
+                    
+                    
+                    
+ 
+            </div>
+            <forge-toolbar slot="footer" divider inverted="true" class="footerDialog">
+                <forge-button slot="end" variant="outlined" theme="success"><a href="/">Continue Shopping</a></forge-button>
+                <forge-button slot="end" variant="raised" class="checkoutBtn" theme="success"><a href="/">Checkout</a></forge-button>
+            </forge-toolbar>
+          </forge-scaffold>
+        </forge-dialog>
+          
+
+          <!-- <div class="bottom-right">
+          <forge-fab theme="success">
+            <forge-icon external name="shopping_cart"></forge-icon>
+            <span slot="label">View your cart (3)</span>
+          </forge-fab>
+        </div> -->
+          
+
+            </div>
+
+
+
+
+
+</body>
+</html>
